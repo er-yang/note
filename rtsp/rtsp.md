@@ -15,13 +15,15 @@ rtsp和rtspu两种URL scheme都可以用于rtsp协议的通信，rtspu指通过u
 
 ### 消息体
 
+消息可分为header和body两部分
+
 rtsp是基于文档传输的协议，使用的是ISO 10646字符集utf-8编码，每一行有CRLF符标志结束，虽说文本协议的处理效率低，官方文档给出的解释是，参数个数少和发送命令的频率很低，所以可以不用考虑这微小的消耗
 
 第一个空行标志着header的结束
 
 #### RequestMessage
 
- [see detail](https://tools.ietf.org/html/rfc2326#section-6)
+ [see detail](https://tools.ietf.org/html/rfc2326#section-6) 
 
 ```
        Request      =       Request-Line          ; Section 6.1
@@ -33,7 +35,7 @@ rtsp是基于文档传输的协议，使用的是ISO 10646字符集utf-8编码�
                             
        Request-Line = Method SP Request-URI SP RTSP-Version CRLF
        
-          Method         =         "DESCRIBE"              ; Section 10.2
+          Method         =  "DESCRIBE"              ; Section 10.2
                   |         "ANNOUNCE"              ; Section 10.3
                   |         "GET_PARAMETER"         ; Section 10.8
                   |         "OPTIONS"               ; Section 10.1
@@ -47,6 +49,7 @@ rtsp是基于文档传输的协议，使用的是ISO 10646字符集utf-8编码�
                   |         extension-method
 
        extension-method = token
+       
        RTSP-Version = "RTSP" "/" 1*DIGIT "." 1*DIGIT
        request-header  =          Accept                   ; Section 12.1
                   |          Accept-Encoding          ; Section 12.2
