@@ -1,6 +1,8 @@
 ## useState
 
-跟踪发现是使用的dispatcher中useState，那dispathcer又是什么呢，在English中它译为调度员
+在我们import的usestate其返回的具体如下
+
+是使用的dispatcher中useState，那dispathcer又是什么呢，在English中它译为调度员
 
 ```javascript
 export function useState<S>(
