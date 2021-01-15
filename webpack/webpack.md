@@ -71,5 +71,7 @@ export default function(source) {
       // 功能完成后调用 webpack 提供的回调。
       callback();
     });
+    
+  module.exports = MyExampleWebpackPlugin;
 ```
 
