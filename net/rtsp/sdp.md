@@ -1,6 +1,6 @@
 # SDP
 
-sdp(Session Description Protocol)是一种回话描述协议，用来表述会话之间交换的信息，特别的用来在多媒体信息传输之间来传递，session announcement, session invitation和其他形式的媒体信息
+sdp(Session Description Protocol)是一种会话描述协议，用来表述会话之间交换的信息，特别的用来在多媒体信息传输之间来传递，session announcement, session invitation和其他形式的媒体信息
 
 ## 内容
 

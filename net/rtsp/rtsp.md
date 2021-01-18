@@ -4,7 +4,7 @@
 
 ### 地址
 
-rtsp和rtspu两种URL scheme都可以用于rtsp协议的通信，rtspu指通过udp来进行通信传输
+rtsp和rtspu两种URL scheme都可以用于rtsp协议的通信，rtspu指通过udp来进行通信传输，其采用默认端口554
 
 ```
    rtsp_URL  =   ( "rtsp:" | "rtspu:" )
