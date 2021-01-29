@@ -5,7 +5,7 @@
 **在新的react架构中，会将代码到页面分成3个阶段**
 
 * **schedule** 阶段，负责调度任务的优先级（requestIdleCallback，不过react使用的是自己实现的ployfill）
-* **reconcile** /**render** 阶段，判断组件任务是否需要更新
+* **reconcile** /**render** 阶段，判断组件任务是否需要更新，是可暂停的
 * **commit** 阶段，将变化的组件渲染到页面上
 
 在其中fiber作为reconcile阶段的最小任务单元
