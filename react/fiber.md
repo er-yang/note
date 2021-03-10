@@ -32,7 +32,7 @@
 
 ##### performUnitOfWork
 
-performUnitOfWork每次接收一个Fiber**，调用**beginWork**或**CompleteWork**，处理完该Fiber后返回下一个需要处理的Fiber。
+performUnitOfWork每次接收一个Fiber，调用**beginWork**或**CompleteWork**，处理完该Fiber后返回下一个需要处理的Fiber。
 
 整个流程虽然看起来繁琐，但就做了2件事：
 
